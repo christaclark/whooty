@@ -376,7 +376,7 @@
 
             $("#typed").typed({
                 strings: ["Personality", "Self-Discovery", "Understanding", "Harmony"],
-                typeSpeed: 200,
+                typeSpeed: 50,
                 backDelay: 600,
                 loop: true,
                 contentType: 'html', // or text
