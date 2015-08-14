@@ -150,7 +150,7 @@ hr.line-separator{
 	width: 22px;
 	height: 2px;
 	border-radius: 1px;
-	background-color: #EA003C;
+	background-color: #fff;
 }
 .navbar-nav li.active a{
 	-webkit-transition: all .2s ease-in-out;
@@ -508,7 +508,7 @@ hr.line-separator{
 /*Text Caption*/
 .slider-text-big{
 	color: #fff;
-	font-size: 56px;
+	font-size: 4em;
 	font-weight: 600;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -516,12 +516,12 @@ hr.line-separator{
 }
 .slider-text-medium{
 	color: #fff;
-	font-size: 36px;
+	font-size: 4em;
 	text-align: center;
 }
 .slider-text-small{
 	color: #fff;
-	font-size: 21px;
+	font-size: 4em;
 	font-weight: 400;
 	text-align: center;
 }
@@ -1817,6 +1817,11 @@ a.instagram-img:hover img {
 }
 
 /*Project Single*/
+
+.feature-box {
+	margin-bottom: 1%;
+	text-align: center;
+}
 .project-single-container{
 	padding: 75px 0;
 }
@@ -1826,14 +1831,14 @@ a.instagram-img:hover img {
 	margin-top: 30px;
 }
 .project-single-header {
-	position: relative;
-	margin-bottom: 0;
-	height: 400px;
-	background: url('../img/elements/elements-bg.jpg') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	/* position: relative; */
+    margin-bottom: 0;
+    height: 400px;
+    background: url('../images/homepage.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .project-single-info h2{
 	color: #000;
@@ -2044,15 +2049,22 @@ a.instagram-img:hover img {
 	padding-right: 0;
 	padding-left: 0;
 }
-.blog-widget-container h3{
+ h3{
 	text-transform: uppercase;
-	color: #000;
-	font-size: 18px;
+	color: #fff;
+	font-size: 30px;
 	font-weight: 600;
 	letter-spacing: 1px;
 	margin-top: 0;
 	margin-bottom: 20px;
 }
+
+h4, .h4 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
 .blog-widget-container{
 	margin-bottom: 50px;
 }
