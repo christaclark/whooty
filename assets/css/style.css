@@ -7,39 +7,10 @@
 	* Website: http://rook.denisgriu.com
 ========================================================================== */
 
-/*
----------------
 
-Table of Contents:
-
-1) GENERAL STYLES
-2) HEADER
-3) BOOTSTRAP OVERRIDE
-4) REVOLUTION SLIDER
-5) ABOUT US
-6) PORTFOLIO
-7) CLIENTS
-8) SERVICES
-9) CALL TO ACTION
-10) OUR TEAM
-11) TESTIMONIALS
-12) FEATURES
-13) BLOG
-14) VIDEO
-15) CLIENT INFO
-16)	SUBSCRIBE
-17) CONTACT
-18) FOOTER
-19) RESPONSIVE STYLES
-20) ELEMENTS PAGES
-21) PAGE LOADER
-22) ELEGANT FONT ICONS
-
---------------
-*/
 
 /*--------------------------------------
-	1) GENERAL STYLES
+	GENERAL STYLES
 ---------------------------------------*/
 
 body{
@@ -74,8 +45,10 @@ a:hover, a:focus{
 	transition: all .2s ease-in-out;
 }
 
+p { text-align: justify;}
+
 /*--------------------------------------
-	2) HEADER
+	HEADER
 ---------------------------------------*/
 
 /*Helper Classes*/
@@ -326,7 +299,7 @@ hr.line-separator{
 ---------------------------------------*/
 
 /*--------------------------------------
-	3) BOOTSTRAP OVERRIDE
+	BOOTSTRAP OVERRIDE
 ---------------------------------------*/
 
 .navbar-brand {
@@ -351,7 +324,7 @@ hr.line-separator{
 .btn {
 	border-radius: 0;
 	display: inline-block;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -369,48 +342,27 @@ hr.line-separator{
 	transition: all .2s ease-in-out;
 }
 
-/*White Button*/
+/*White and Red Button*/
 .btn-white:hover{
-	color: #d72363;
-	background-color: #fff;
+	color: #fff;
+	background-color: #AF1D50;
 	border-color: transparent;
 }
 .btn-white{
-	color: #fff;
-	background-color: transparent;
+	color: #EA003C;
+    background-color: #fff;
+    font-size: 14px;
 }
 
-/*White Button Transparent Background*/
-.btn-white-t:hover{
-	color: #111;
-	background-color: #fff;
-}
-.btn-white-t{
-	color: #fff;
-	border-color: #fff;
-	background-color: transparent;	
-}
-
-/*Black Button*/
-.btn-black:hover{
-	color: #fff;
-	background-color: #3d3d3d;
-	border-color: transparent;
-}
-.btn-black{
-	color: #fff;
-	background-color: #111;	
-}
-
-/*Pink Button*/
 .btn-red:hover{
 	color: #fff;
 	background-color: #AF1D50;
 	border-color: transparent;
 }
+
 .btn-red{
-	color: #EA003C;
-    background-color: #fff;
+	color: #fff;
+    background-color: #EA003C;
 }
 
 /*--------------------------------------
@@ -418,7 +370,7 @@ hr.line-separator{
 ---------------------------------------*/
 
 /*--------------------------------------
-	4) REVOLUTION SLIDER
+ REVOLUTION SLIDER
 ---------------------------------------*/
 
 .boxedcontainer{	
@@ -554,7 +506,7 @@ a.play-btn{
 ---------------------------------------*/
 
 /*--------------------------------------
-	5) ABOUT US
+	 ABOUT US
 ---------------------------------------*/
 
 .about-content p{
@@ -574,7 +526,7 @@ a.play-btn{
 ---------------------------------------*/
 
 /*--------------------------------------
-	6) PORTFOLIO
+ MASONRY
 ---------------------------------------*/
 
 .cbp-filter-counter{
@@ -721,39 +673,12 @@ a.play-btn{
 
 }
 /*--------------------------------------
-	END PORTFOLIO
+	END PORTFOLIO / MASONRY
 ---------------------------------------*/
 
-/*--------------------------------------
-	7) CLIENTS
----------------------------------------*/
-
-.rk-clients-content .col-md-3{
-	padding-right: 5px;
-	padding-left: 5px;
-}
-.rk-clients-content a.thumbnail{
-	background-color: #f2f2f2;
-	border: none;
-	border-radius: 0;
-	padding: 65px;
-	margin-bottom: 10px;
-}
-.rk-clients-content a.thumbnail:hover{
-	background-color: rgba(242,242,242,0.10);
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-}
 
 /*--------------------------------------
-	END CLIENTS
----------------------------------------*/
-
-/*--------------------------------------
-	8) SERVICES
+	NAV TABS
 ---------------------------------------*/
 
 .nav-tabs-services{
@@ -824,7 +749,7 @@ a.play-btn{
 ---------------------------------------*/
 
 /*--------------------------------------
-	9) CALL TO ACTION
+	CALL TO ACTION
 ---------------------------------------*/
 
 .parallax-overlay {
@@ -856,149 +781,9 @@ a.play-btn{
 	END CALL TO ACTION
 ---------------------------------------*/
 
-/*--------------------------------------
-	10) OUR TEAM
----------------------------------------*/
-
-.team-content .thumbnail{
-	border: none;
-	border-radius: 0;
-}
-.team-content .caption{
-	text-align: center;
-}
-.team-content .team-details h5{
-	font-size: 14px;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color: #d72363;
-}
-.team-content .team-details h3{
-	text-transform: uppercase;
-	font-size: 18px;
-	font-weight: 500;
-	letter-spacing: 1px;
-	margin-bottom: 25px;
-	color: #111;
-}	
-.team-inner{
-	position: relative;
-	padding: 0;
-	overflow: hidden;	
-	border: none;
-	margin: 0;	
-}
-.team-inner>img, .team-caption>img{
-	display: block;
-	max-width: 100%;
-	height: auto;	
-}
-.team-inner .team-caption{
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	left: 0;
-	top: 0;
-	display: table-cell;
-	vertical-align: middle;
-	background-color: rgba(0,0,0,.85);
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-	visibility: hidden;
-	opacity: 0;	
-}
-.team-inner:hover .team-caption, .team-inner:focus .team-caption{
-	visibility: visible;
-	opacity: 1;
-}
-.t-social-holder{
-	display: table;
-	width: 100%;
-	height: 100%;
-}
-.team-social{
-  	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	padding: 0 25px 0 25px;
-}
-.team-social h3{
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 18px;
-	font-weight: 500;
-	letter-spacing: 1px;
-}
-.team-social p{
-	font-size: 15px;
-	font-weight: 300;
-	color: #fff;	
-	margin: 25px 0 25px 0;
-}
-.team-social a{
-	color: #d72363;
-	margin: 0 15px 0 0;	
-}
-.team-details p{
-	margin-bottom: 0;
-}
 
 /*--------------------------------------
-	END OUR TEAM
----------------------------------------*/
-
-/*--------------------------------------
-	11) TESTIMONIALS
----------------------------------------*/
-
-.cbp-l-slider-testimonials-wrap {
-	background: top;
-	padding: 70px 0;
-	border-width: 0;
-	border-style: none;
-	border-color: transparent;
-}
-.cbp-l-grid-slider-testimonials-body {
-	font-family: 'Raleway', sans-serif;
-	color: #fff;
-}
-.cbp-l-slider-testimonials-wrap {
-  padding: 0 0 38px 0;
-}
-.cbp-l-grid-slider-testimonials-footer {
-	font-family: 'Raleway', sans-serif;
-	font-size: 14px;
-	font-weight: 700;
-	color: #f2f2f2;
-}
-.cbp-slider-edge .cbp-nav-pagination-active {
-	background: #fff;
-}
-.cbp-slider-edge .cbp-nav-pagination-item {
-	border: 2px solid #fff;
-	opacity: 10;
-}
-.cbp-nav-pagination-item {
-	width: 12px;
-	height: 12px;
-}
-.cbp-l-grid-slider-testimonials-body img{
-	width: 100px;
-	height: 100px;
-	margin: 0 auto;
-	margin-bottom: 20px;
-}
-
-/*--------------------------------------
-	END TESTIMONIALS
----------------------------------------*/
-
-/*--------------------------------------
-	12) FEATURES
+	FEATURES
 ---------------------------------------*/
 
 .features-section .col-sm-6:nth-child(-n+3){
@@ -1063,294 +848,17 @@ h3.features-title{
 	END FEATURES
 ---------------------------------------*/
 
-/*--------------------------------------
-	13) BLOG
----------------------------------------*/
 
-.blog-article a{
-	text-decoration: none;
-}
-.blog-article{
-	background-color: #fff;
-	padding: 40px;
-	border-bottom: 1px solid #f5f5f5;
-	border-right: 1px solid #f5f5f5;
-	height: 330px;
-}
-.blog-article:hover{
-	background-color: #f9f9f9;
-	cursor: pointer;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-}
-.blog-article .blog-header span.blog-article-cat{
-	color: #111;
-	font-weight: 600;
-}
-.blog-article .blog-header span.blog-article-date{
-	color: #999;
-	font-weight: 600;
-}
-.blog-article .blog-header h2{
-	color: #111;
-	font-weight: 700;
-	font-size: 24px;
-	letter-spacing: 1px;
-	margin-bottom: 20px;
-}
-.blog-article header p{
-	color: #999;
-	font-size: 16px;
-	letter-spacing: 0.2px;
-	margin-bottom: 20px;
-}
-.blog-article article p.blog-article-btn{
-	color: #d72363;
-	text-transform: uppercase;
-	font-weight: 700;
-	margin-bottom: 0;
-}
+
 
 /*--------------------------------------
-	END BLOG
----------------------------------------*/
-
-/*--------------------------------------
-	14) VIDEO
----------------------------------------*/
-
-.video-content header h3{
-	color: #111;
-	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: 0.8px;
-	margin-top: 0;
-	margin-bottom: 20px;
-}
-.video-content header article{
-	margin-bottom: 30px;
-}
-.video-wrapper iframe{
-	border: none;
-}
-
-/*--------------------------------------
-	VIDEO
----------------------------------------*/
-
-/*--------------------------------------
-	15) CLIENT INFO
----------------------------------------*/
-
-.info-content .col-sm-3{
-	background-color: #111;
-	text-align: center;
-	padding: 30px;
-}
-.info-content .col-sm-3 h1{
-	color: #d72363;
-	font-weight: 700;
-	font-size: 42px;
-	letter-spacing: 1px;
-}
-.info-content .col-sm-3 p{
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 16px;
-	letter-spacing: 1px;
-}
-
-/*--------------------------------------
-	END CLIENT INFO
----------------------------------------*/
-
-/*--------------------------------------
-	16) SUBSCRIBE
----------------------------------------*/
-
-.subscribe-content header h2{
-	margin-top: 0;
-	color: #111;
-	text-transform: uppercase;
-	letter-spacing: 0.8px;
-	font-size: 24px;
-	font-weight: 700;
-}
-.subscribe-content header p{
-	color: #111;
-	letter-spacing: 0.2px;
-	font-weight: 500;
-	margin-top: 20px;
-	margin-bottom: 40px;
-}
-.subscribe-input input{
-	border-radius: 0;
-	padding: 0 100px 0 20px;
-	height: 40px;
-	box-shadow: none;
-	margin-right: 10px;
-}
-.subscribe-input input:focus, textarea:focus, select:focus {
-	border: 1px solid #111; 
-	background-color: #fff; 
-	color: #111; 
-	box-shadow: none;
-	outline: 0 none;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;	
-}
-
-/*--------------------------------------
-	END SUBSCRIBE
----------------------------------------*/
-
-/*--------------------------------------
-	17) CONTACT
----------------------------------------*/
-
-#map-canvas{
-	height: 600px;
-	width: auto;
-}
-.contact-form input, select {
-	width: 100%;
-	padding: 12.9px;
-	color: #111;
-	background: #fff;
-	border: 1px solid #F0F0F0;
-	box-shadow: none;
-	border-radius: 0;
-	height: auto;
-}
-.contact-form textarea{ 
-	width: 100%;
-	padding: 13px;
-	color: #444;
-	background: #fff;
-	border: 1px solid #F0F0F0;
-	border-radius: 0;
-	box-shadow: none;
-}
-.contact-title h3{
-	color: #111;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 20px;
-	letter-spacing: 1px;
-	margin-top: 0;
-	text-align: center;
-	margin-bottom: 40px;
-}
-.contact-details{
-	padding-top: 40px;
-}
-.contact-address small a{
-	color: #999;
-}
-.contact-address small{
-	font-size: 14px;
-	font-weight: 500;
-}	
-.contact-address span{
-	color: #111;
-	text-transform: uppercase;
-	letter-spacing: 0.7px;
-}
-.contact-address .col-sm-4 .icon-map, .contact-address .col-sm-4 .icon-phone, .contact-address .col-sm-4 .icon-envelope{
-	font-size: 32px;
-}
-.form-content h2{
-	color: #111;
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 20px;
-	margin-top: 20px;
-	margin-bottom: 30px;
-}
-.contact-form-text{
-	margin-top: 10px;
-}
-.contact-form-btn{
-	margin-top: 10px;
-}
-.contact-form-btn input{
-	color: #fff;
-	background-color: #111;
-	border: none;
-}
-.contact-form-btn input:focus, textarea:focus, select:focus {
-	box-shadow: none;
-	outline: 0 none;
-}
-textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {   	
-	box-shadow: none;
-	outline: 0 none;
-}
-textarea { 
-	width: 100%; 	
-	height: 165px;
-	padding: 13px; 
-	color: #444; 
-	background: #fff; 
-	border: 1px solid #F2F2F2; 
-	margin-top: 7px;	
-	margin-right: 15px;
-	-webkit-border-radius:2px; 
-}
-#contact .col-sm-6 input:focus, textarea:focus, select:focus { 	
-	border: 1px solid #111; 
-	background-color: #fff; 
-	color: #111; 
-	box-shadow: none;
-	outline: 0 none;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-}
-.error_message{
-	padding: 10px;
-	color: #d72363;
-	width: 400px;
-	font-weight: 600;
-	margin: 0 auto;
-}
-#success_page{
-	color: #111;
-}
-#success_page strong{
-	color: #d72363;
-}
-#contact input.submit:hover { 
-	background:#444; 
-}
-#contact input[type="submit"][disabled] { background:#888; }
-
-#contact span.required { 
-	font-size: 13px; 
-	color: #ff0000; 
-}
-
-/*--------------------------------------
-	END CONTACT
----------------------------------------*/
-
-/*--------------------------------------
-	18) FOOTER
+	 FOOTER
 ---------------------------------------*/
 
 .footer{
 	width: 100%;
 	padding: 30px 0;
-	background-color: #111;
+	background-color: #222;
 }
 .footer p{
 	padding: 0;
@@ -1402,8 +910,12 @@ textarea {
 ---------------------------------------*/
 
 /*--------------------------------------
-	19) RESPONSIVE STYLES
+	RESPONSIVE STYLES
 ---------------------------------------*/
+
+@media(max-width:530px){
+	#featured-image:{max-width: 300px; position:relative; float:center;}
+}
 
 @media(max-width:1200px){
 	.nav>li>a {padding: 10px 10px;}
@@ -1468,10 +980,18 @@ textarea {
 	.error-page-search a{margin-top: 30px;}
 	.contact-form input, select {margin-bottom: 10px;}
 	.team-content .col-sm-4{margin-bottom: 20px;}
+	#featured-image {max-width: 350px; position:relative; }
+
 }
+
 
 /*--------------------------------------
 	END RESPONSIVE STYLES
+---------------------------------------*/
+
+
+/*--------------------------------------
+	BUTTONS
 ---------------------------------------*/
 
 /*Typing Letters*/
@@ -1491,107 +1011,6 @@ textarea {
     animation: blink 0.7s infinite;
 }
 
-/*--------------------------------------
-	20) ELEMENTS PAGES
----------------------------------------*/
-
-/*Accordions*/
-.elements-header{
-	position: relative;
-	margin-bottom: 0;
-	height: 400px;
-	background: url('../img/elements/elements-bg.jpg') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-.elements-title{
-	position: absolute;
-	left: 0;
-	top: 40%;
-	bottom: 0;
-	right: 0;
-}
-.elements-title h1{
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: 700;
-	color: #fff;
-}
-.elements-title p{
-	color: #fff;
-}
-.elements-container{
-	padding: 150px 0;
-}
-.elements-container .col-sm-6{
-	margin-bottom: 50px;
-}
-.accordion-panel{
-	border: none;
-	border-color: transparent;
-	border-radius: 0;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
-.accordion-panel .panel-heading{
-	padding: 20px 25px;
-	border-bottom: none;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-}
-.accordion-panel .panel-title{
-	text-transform: uppercase;
-	font-size: 14px;
-	font-weight: 700;
-	color: #999;
-	letter-spacing: 2px;
-}
-.accordion-panel .panel-title a{
-	text-decoration: none;
-}
-.accordion-panel .panel-heading+.panel-collapse>.panel-body, .accordion-panel .panel-heading+.panel-collapse>.list-group {
-	border-top: none;
-}
-.accordion-panel a i{
-	float: right;
-}
-
-/*Tabs*/
-.elements-nav-tabs li a, .elements-nav-tabs-second li a{
-	text-transform: uppercase;
-	font-weight: 700;
-	border-radius: 0;
-	padding: 20px 25px;
-}
-.elements-tab-content .tab-pane, .elements-tab-content-second .tab-pane{
-	padding-top: 20px;
-}
-.elements-nav-tabs>li>a:hover, .elements-nav-tabs-second>li>a:hover {
-	border-color: transparent;
-	background-color: #f2f2f2;
-}
-.elements-nav-tabs>li.active>a, .elements-nav-tabs>li.active>a:hover, .elements-nav-tabs>li.active>a:focus {
-	color: #999;
-}
-.elements-nav-tabs-second>li.active>a, .elements-nav-tabs-second>li.active>a:hover, .elements-nav-tabs-second>li.active>a:focus {
-	color: #999;
-	cursor: default;
-	background-color: #f2f2f2;
-	border: none;
-	border-bottom-color: transparent;
-}
-.elements-tabpanel-second .tab-content>.active {
-	padding: 25px;
-	background-color: #f2f2f2;
-}
-.elements-nav-tabs-second{
-	border-bottom: none;
-}
-.elements-nav-tabs-second li a{
-	border: none;
-}
 
 /*Buttons*/
 .btn-red-border{
@@ -2060,7 +1479,7 @@ a.instagram-img:hover img {
 }
 
 h4, .h4 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
 }
 
@@ -2627,3 +2046,5 @@ you can use the generic selector below, but it's slower:
 .icon-dribbble:before {
 	content: "\e063";
 }
+
+

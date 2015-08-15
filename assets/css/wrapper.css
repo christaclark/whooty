@@ -1,0 +1,98 @@
+.wrapper-dark {
+  background-color: #222222;
+  color: #eeeeee;
+}
+.wrapper {
+  float: left;
+  width: 100%;
+  display: block;
+  color: #222222;
+  position: relative;
+}
+
+
+
+/* p{
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666666;
+  background-color: #181818;
+} */
+
+
+#bck-img1.wrapper-half-left::before {
+  background-image: url('../images/stock/personal.jpg');
+  background-size: cover;
+}
+#bck-img2.wrapper-half-right::before {
+  background-image: url('../images/stock/real.jpg');
+  background-size: cover;
+}
+
+#bck-img3.wrapper-half-left::before {
+  background-image:url('../images/stock/professional.jpg');
+  background-size: cover;
+}
+
+#bck-img4.wrapper-half-right::before {
+  background-image:url('../images/stock/company.jpg');
+  background-size: cover;
+}
+
+
+@media (max-width: 767px) {
+#bck-img1.wrapper-half-left::before { display: none; }
+.wrapper-half-right::before {display: none;}
+#bck-img3.wrapper-half-left::before  { display: none; }
+}
+
+
+.wrapper-half-left::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 33.33333333%;
+  background-color: #eeeeee;
+  color: #ffffff;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+h4 .white {
+  color: #ffffff;
+}
+
+.wrapper-primary {
+  background-color: #fff;
+}
+
+
+.wrapper-primary.wrapper-half-left::before, .wrapper-primary.wrapper-half-right::before {
+  background-color: #eeeeee;
+}
+.wrapper-half-right::before {
+  content: "";
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 33.33333333%;
+  background-color: #eeeeee;
+  color: #ffffff;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+Pseudo ::after element
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

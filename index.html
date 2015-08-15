@@ -28,7 +28,9 @@
         <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.theme.css"> 
 
         <!-- Main CSS -->               
-        <link rel="stylesheet" href="assets/css/style.css">      
+        <link rel="stylesheet" href="assets/css/style.css">    
+
+         <link rel="stylesheet" href="assets/css/wrapper.css">     
 
         <!-- Google Web Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700' rel='stylesheet' type='text/css'>   
@@ -41,17 +43,12 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]--> 
         
-        <!--Start Preloader -->
-        <div id="preloader">
-            <div class="preloader-container">
-                <div class="spinner"></div>
-            </div>
-        </div>
-        <!-- End Preloader-->                          
+                              
         
-        <!-- Header -->
+    <!-- ********************* HEADER SECTION ********************* -->
+    <!-- ************************************************************ -->     
         <section id="header-section">
-            <!-- Navbar -->        
+            <!-- ********************* NAV BAR ********************* -->      
             <nav class="navbar header-navbar navbar-fixed-top" role="navigation">
                 <div class="container-fluid header-navbar-container">
                     <div class="navbar-header">
@@ -72,17 +69,19 @@
                         <!-- Navigation Menu -->
                         <ul class="nav navbar-nav">                       
                             
-                            <li><a href="about.html">About</a></li>   
-                            <li><a href="features.html">Features</a></li> 
+                            <li><a href="#portfolio-section">About</a></li>   
+                            <li><a href="#features">Features</a></li> 
                             <li class="active"><a href="#">Login</a></li> 
                             <li><a href="#">Register</a></li>             
                         </ul>
                     </div>                
                 </div> <!-- /.container-fluid -->           
             </nav>
-            <!-- End Navbar -->        
+             <!-- ********************* NAV BAR ********************* -->   
 
-            <!-- Revolution Slider -->              
+
+
+    <!-- ********************* HEADER SLIDER ********************* -->          
             <div class="tp-banner-container tp-banner-5-container">            
                 <div class="tp-banner-5">                
                     <ul>    
@@ -108,19 +107,19 @@
                                 data-endeasing="Power4.easeIn"
                                 style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">Discover the power of
                                 <div class="slider-typed">
-                                    <span id="typed" style="color: #fff; font-weight: 700; font-size: 1em;"></span>                               
+                                    <span id="typed" style="color: #fff; font-weight: 700; font-size: 50px;"></span>                               
                                 </div>
                             </div>  
 
 
                             <div class="tp-caption slider-text lfb ltt tp-resizeme start" 
                             data-x="center" data-hoffset="-85" data-y="center" data-voffset="150" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" 
-                             style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><a class="btn btn-red" href="#x" role="button">  Login  </a>
+                             style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><a class="btn btn-white" href="#x" role="button">  Login  </a>
                             </div>
 
                             <div class="tp-caption slider-text lfb ltt tp-resizeme start" 
                             data-x="center" data-hoffset="85" data-y="center" data-voffset="150" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" 
-                             style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><a class="btn btn-red" href="#x" role="button">Register</a>
+                             style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><a class="btn btn-white" href="#x" role="button">Register</a>
                             </div>
                                   
                         </li>
@@ -130,9 +129,13 @@
                 </div>
             </div><!-- End Revolution Slider -->           
         </section>
-        <!-- End Header -->          
+    <!-- ********************* HEADER SECTION END ********************* -->
+    <!-- ************************************************************ -->
 
-        <!-- About Section -->
+
+
+    <!-- ********************* ABOUT SECTION  ********************* -->
+    <!-- ************************************************************ -->
         <section id="about-section" class="section-padding">            
             <div class="container">                           
                 <div class="about-content about-content-portfolio">                                        
@@ -151,240 +154,156 @@
                 </div>
             </div> <!-- /.container --> 
         </section>
-        <!-- End About Section -->
+        <!-- ********************* ABOUT SECTION END ********************* -->
+    <!-- ************************************************************ -->
 
-        <!-- Photo Section -->
-        <section id="portfolio-section" class="section-padding section-bg-color">            
-            <div class="container rk-portfolio-content">              
 
-                <!-- Portfolio Filters --> 
-                <div id="portfolio-filters-container" class="cbp-l-filters-alignRight">
-                    <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
-                        <strong>WhoType is:</strong> <div class="cbp-filter-counter"></div>
-                    </div>
-                    <div data-filter=".identity" class="cbp-filter-item">
-                        Personal <div class="cbp-filter-counter"></div>
-                    </div>
-                    <div data-filter=".web-design" class="cbp-filter-item">
-                        Professional <div class="cbp-filter-counter"></div>
-                    </div>
-                    <div data-filter=".graphic" class="cbp-filter-item">
-                        Romantic <div class="cbp-filter-counter"></div>
-                    </div>
-                    <div data-filter=".graphic, .identity" class="cbp-filter-item">
-                        Corporate <div class="cbp-filter-counter"></div>
-                    </div>
+     <!-- ********************* WRAPPER ********************* -->
+    <!-- Half colored wrapper with background image on the left - Check the SCSS/CSS file for the section id to change the background image path -->
+
+      <section id="bck-img1" class="wrapper wrapper-dark wrapper-half-left ptb ptb-sm-60">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 visible-xs text-center" style="margin-top: 5%">
+                    <img src="assets/images/stock/personal.jpg" style="max-height: 250px;">
                 </div>
-
-                <!-- Portfolio Items -->
-                <div id="portfolio-grid-container" class="cbp-l-grid-masonry">
-
-                    <!-- / / / / / / / / / / / / / / / / / / Row 1 / / / / / / / / / / / / -->
-
-                     <!-- Item -->
-                    <div class="cbp-item graphic identity">
-                        <a class="over-image">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="assets/images/stock/DeathtoStock5.jpg" alt="Specifie an alternate text for an image">
-                                 <div class="image-content">
-                            <h3>START WITH YOURSELF</h3>
-                            <h4>Discover something new about someone that matters. You. Discover how your personality is just a set of root motivations in our thinking. Personality is really just a set of motivational patterns manifesting themselves. Seek to understand them. </h4>
-                         </div>
-                         </div>
-                        </a>
-                    </div>
-
-
-                     <!-- Item -->
-                    <div class="cbp-item web-design">
-                        <a class="cbp-caption cbp-lightbox">
-                            <div class="content-box">
-                               <p style="font-weight: 700; font-size: 26px;">Discover your Whotype and explore how personality patterns connect us with our world, and relationships that matter. </p>
-                            </div>
-                            
-                        </a>
-                    </div> 
-
-
-                     <!-- Item -->
-                    <div class="cbp-item graphic">
-                        <a class="cbp-caption cbp-lightbox" data-title="Personality">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="assets/images/stock/DSCF7340.jpg "alt="Specifie an alternate text for an image">
-                            </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-title">Something Good</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+            <div class="col-sm-8 col-sm-offset-4 col-xs-12" style="margin-bottom: 8%; margin-top: 8%; color: #eee;">
+               <h2>LET'S GET PERSONAL</h2>
+               <p style="font-size: 18px;">Whotype is all about understanding important relationships, the ones that truly matter. Your closest family and friends. Understanding others that we care about is the key to harmony in our own life. Whotype helps explore the dynamics of each amazing relationship you have so that you can laugh more, stress less, and truly connect with one another. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- ********************* WRAPPER END ********************* -->
 
 
 
-                   
+   <!-- ********************* WRAPPER ********************* -->
 
-                    <!-- Item -->
-                    <div class="cbp-item identity">
-                        <a class="cbp-caption cbp-lightbox" data-title="WhereTO App">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="assets/images/stock/boy.jpg" alt="Specifie an alternate text for an image">
-                            </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-title">Something Good</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                  
-
-                   
-                    <!-- / / / / / / / / / / / / / / / / / / Row 2 / / / / / / / / / / / / -->
-
-                      <!-- Item -->
-                    <div class="cbp-item web-design">
-                        <a class="cbp-caption cbp-lightbox">
-                            <div class="content-box">
-                               <p style="font-size: 46px; font-weight: 700; line-height: 42px;">Who are you &amp; what is your Type?</p>
-                            </div>
-                            
-                        </a>
-                    </div> 
-
-                         <!-- Item -->
-                    <div class="cbp-item graphic">
-                        <a class="cbp-caption cbp-lightbox" data-title="Personality">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="assets/images/stock/IMG_9501.jpg"alt="Specifie an alternate text for an image">
-                            </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-title">Something Good</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                       <!-- Item -->
-                    <div class="cbp-item graphic identity">
-                        <a class="over-image">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="assets/images/stock/W34X3TF4NW.jpg" alt="Specifie an alternate text for an image">
-                                 <div class="image-content">
-                            <h3>CONNECT WITH YOUR WORLD </h3>
-                <h4> Search for anyone and connect with important people in your life. Since they know you best, play the game of typing each other and giving quirks for your cherished times together. They know you best, they matter. Interacting with what matters, you can discover how your Whotype connects you with the world you care about, not the noise.  </h4>
-                         </div>
-                         </div>
-                        </a>
-                    </div>
-
-                    <!-- Item -->
-                    <div class="cbp-item graphic">
-                        <a class="cbp-caption cbp-lightbox" data-title="Personality">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="assets/images/stock/p-project1-01.jpg"alt="Specifie an alternate text for an image">
-                            </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-title">Something Good</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <!-- / / / / / / / / / / / / / / / / / / / Row 1 / / / / / / / / / / / /-->
-
-                      <!-- Item -->
-                    <div class="cbp-item web-design">
-                        <a class="cbp-caption cbp-lightbox">
-                            <div class="content-box">
-                               <p style="font-size: 46px; font-weight: 700; line-height: 42px;">Being aware of your patterns in life</p>
-                            </div>
-                            
-                        </a>
-                    </div>  
-
-                       <!-- Item -->
-                    <div class="cbp-item graphic identity">
-                        <a class="over-image">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="assets/images/stock/f9c22c58.jpg" alt="Specifie an alternate text for an image">
-                                 <div class="image-content">
-                            <h3>GET IN TUNE, THEN THRIVE ON</h3>
-                <h4>Gain a deeper understanding of how to live healthy, in balance, and start to become more aware of your personality’s patterns in action. Getting in tune produces harmony in both personal and professional relationships, and harmony produces amazing.</h4>
-                         </div>
-                         </div>
-                        </a>
-                    </div>
-
-                    <!-- / / / / / / / / / / / / / / / / / / / Row 4 / / / / / / / / / / / / / -->
-
-
-                    <!-- Item -->
-                     <div class="cbp-item graphic">
-                        <a class="cbp-caption cbp-lightbox" data-title="Seemple* Music for iPad" >
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="assets/images/stock/HNCK4555.jpg" alt="Specifie an alternate text for an image">
-                            </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-title">Something Good</div>
-                                        <div class="cbp-l-caption-desc">Something better</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                     <!-- Item -->
-                    <div class="cbp-item web-design graphic">
-                        <a class="cbp-caption cbp-lightbox" data-title="Sickpuppy<br>by Cosmin Capitanu">
-                            <div class="cbp-caption-defaultWrap">
-                                <img src="assets/images/stock/YLB8C94HYI.jpg" alt="Specifie an alternate text for an image">
-                            </div>
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-alignCenter">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="cbp-l-caption-title">Something Good</div>
-                                        <div class="cbp-l-caption-desc">Something better</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>      
-
-                      <!--
-                    <div class="cbp-item web-design">
-                        <a class="cbp-caption cbp-lightbox">
-                            <div class="content-box">
-                               <p>Let's discover the true power of personailty..</p>
-                            </div>
-                            
-                        </a>
-                    </div> -->
-                    
-                   
-
-                    
-
-                             
-
-            </div> <!-- /.container-fluid --> 
+        <section id="bck-img2" class="wrapper wrapper-primary wrapper-half-right ptb ptb-sm-60">
+          <div class="container">
+            <div class="row">
+                <div class="col-xs-12 visible-xs text-center" style="margin-top: 5%">
+                    <img src="assets/images/stock/real.jpg" style="max-height: 250px;">
+                </div>
+              <div class="col-sm-8 col-xs-12 text-left" style="margin-bottom: 5%; margin-top: 5%;">
+                <h2>LETS GET REAL</h2>
+               <p style="font-size: 18px;">If you’re single, find someone who balances you into your best self. Relationships often boil down to money, sex, and communication and these three are often not equally important to one another, so Whotype helps in visualizing and understanding what motivates the ones we love so that we can create fulfilling, lasting, and loving relationships.</p>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
         </section>
-        <!-- End Photo Section -->                                                        
+    <!-- ********************* WRAPPER END ********************* -->
+
+
+
+ <!-- ********************* WRAPPER ********************* -->
+        <section id="bck-img3" class="wrapper wrapper-dark wrapper-half-left ptb ptb-sm-60">
+          <div class="container">
+            <div class="row">
+                <div class="col-xs-12 visible-xs text-center" style="margin-top: 5%">
+                    <img src="assets/images/stock/professional.jpg" style="max-height: 250px;">
+                </div>
+              <div class="col-sm-8 col-sm-offset-4 col-xs-12" style="margin-bottom: 5%; margin-top: 5%; color:#eee;">
+                <h2>LET’S GET PROFESSIONAL</h2>
+               <p style="font-size: 18px;">Whotype supports you in your advancement of understanding how motivations fit with those around you, and unveil your root needs for fulfillment within. Motivations are what make us do what we do. Understanding our colleagues and professional connections creates workplace harmony which is where something amazing is produced together.</p>
+            </div>
+          </div>
+      </section>
+    <!-- *********************  WRAPPER END ************************ -->
+
+
+     <!-- ********************* WRAPPER ********************* -->
+
+        <section id="bck-img4" class="wrapper wrapper-primary wrapper-half-right ptb ptb-sm-60">
+          <div class="container">
+            <div class="row">
+                <div class="col-xs-12 visible-xs text-center" style="margin-top: 5%">
+                    <img src="assets/images/stock/company.jpg" style="max-height: 250px;">
+                </div>
+              <div class="col-sm-8 col-xs-12 text-left" style="margin-bottom: 5%; margin-top: 5%;">
+                 <h2>COMPANIES HAVE A PERSONALITY TOO!</h2>
+               <p style="font-size: 18px;">From Startups to Industry Leaders, Whotype is harmony at work, especially in HR. Whotype helps leading leading companies to better understand any candidate and process the spectrum of team dynamics. Measure teams, working groups, and the company personality as a whole. Develop, advance, and promote true workplace harmony that’s encouraged and effective and then help teams manage and motivate one another toward great things. </p>
+            </div>
+            
+              </div>
+            </div>
+          </div>
+        </section>
+    <!-- ********************* WRAPPER END ********************* -->
+  
+
+           
+
+
+         <!-- Features Single Container -->
+        <div id="features" class="container project-single-container">    
+
+            <!-- Feautres Information -->
+            <div class="project-single-info">                
+                <div class="col-md-6 col-md-offset-2 col-sm-12 text-center" >
+                       <img  id="featured-image"  src="assets/images/devices.png" >
+                </div>   
+
+                <div class="col-sm-12">
+                    <div class="col-sm-4 feature-box">
+                        <h2>Coupler</h2><p>Explore relationships that require deep focus, attention, and care-taking. Explore the dynamics of how to best work and best agree with any person you know.</p>
+                    </div> 
+
+                     <div class="col-sm-4 feature-box">
+                         <h2>Lifegraph</h2><p>Your sphere of influence, visualized. Sort the importance and influence of your relationships and map how your world connects with you. The closer they are to you, the more you’ll see about them in your feed as well! </p>
+                     </div> 
+
+                     <div class="col-sm-4 feature-box">
+                        <h2>Harmonizer </h2> <p>Relationships are personalities at work. Harmonizer helps understand the possible pattern outputs that are likely to come from any set of group dynamics be it one on one or teams - to companies. Harmonizer helps you understand the company you keep.</p>  
+                    </div> 
+
+                     <div class="col-sm-4 feature-box">
+                        <h2>Company Pages </h2><p>Explore how you fit in your company, what personality lives within teams, and with specific co-workers. Using WhoType company pages, workplace dynamics are visualized, helping to understand and manage culture and workplace harmony. </p>
+                    </div> 
+
+                    
+                       
+                    <div class="col-sm-4 feature-box">
+                        <h2>Feed</h2> <p>Whotype uses the lifegraph to create a feed about what really matters most to you. The Whotype feed brings the information about the people you care most about to you, and relates it to your personality.</p>  
+                    </div> 
+                    <div class="col-sm-4 feature-box">
+                       <h2>Search </h2><p>Find anything about anyone. Quirks, personality type, patterns, behaviors, stress indicators, turn-ons, and core motivations. Search any quality in people you can think of. </p>  
+                   </div> 
+
+                   
+                </div>   
+            </div><!-- // End Feautres Information -->
+
+            <div class="clearfix"></div>                                                         
+        </div> <!-- /. end features container -->
+
+
+
+
+
+        <!-- Call to Action  Section -->
+        <section id="about-section" class="section-padding" style="background-image: url('assets/images/stock/DeathtoStock_Desk9.jpg'); vertical-align: middle; repeat: none;">            
+            <div class="container">                           
+                <div class="about-content about-content-portfolio">                                        
+                    <!-- Description -->
+                    <div class="text-center row">
+                        <h1 style="font-weight: 700; color: #fff;text-shadow: 2px 2px #30383E;">TRY OUT WHOTYPE NOW!</h1> 
+                        <!--<p style="font-size: 18px; color: #fff;">It will always be free because your happiness should always be free</p> -->
+                    </div>
+                    <div class="text-center row">
+                       <a class="btn btn-red" href="#x" role="button">Register</a>
+                    </div>
+
+                   
+
+                </div>
+            </div> <!-- /.container --> 
+        </section>
+        <!-- End Call to Action Section -->
+                                                       
 
         <!-- Footer -->
         <footer class="footer footer-second" id="footer-section">
@@ -424,12 +343,12 @@
             <!-- Footer Social -->
                 <div class="col-sm-6 col-sm-offset-3 text-center ">      
                           
-                      <p>MADE WITH LOVE IN AUSTIN, TX · (845) 123-4567 · INFO@WHOTYPE.COM</p>  
+                      <h4>MADE WITH LOVE IN AUSTIN, TX · (845) 123-4567 · INFO@WHOTYPE.COM</h4>  
 
                 </div>     
                 <!-- Copyright -->                                                                                         
                 <div class="col-sm-6 col-sm-offset-3 text-center ">     
-                    <p>&copy; 2015, WhoType. All Rights Reserved.</p>                            
+                    <p class="text-center">&copy; 2015, WhoType. All Rights Reserved.</p>                            
                 </div>
                 <!-- Scroll Top Button -->
                 <div class="col-sm-3">
