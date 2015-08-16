@@ -914,7 +914,7 @@ h3.features-title{
 ---------------------------------------*/
 
 @media(max-width:530px){
-	#featured-image:{max-width: 300px; position:relative; float:center;}
+	#featured-image:{max-width: 100%; position:relative; float:center; overflow: hidden;}
 }
 
 @media(max-width:1200px){

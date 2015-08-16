@@ -19,11 +19,11 @@
         <!-- Favicon-->
         <link rel="icon" type="image/png" href="assets/images/favicon.png">
         
-        <!-- CSS Plugins -->
-        <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">    
-        <link rel="stylesheet" href="assets/plugins/rs-plugin/css/settings.css">        
-        <link rel="stylesheet" href="assets/plugins/cubeportfolio/css/cubeportfolio.min.css">   
-        <link rel="stylesheet" href="assets/plugins/magnific/magnific-popup.css">       
+        <!-- CSS Plugins
+        <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">   
+        <link rel="stylesheet" href="assets/plugins/rs-plugin/css/settings.css">      
+       <!-- <link rel="stylesheet" href="assets/plugins/magnific/magnific-popup.css">       -->
         <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.css">       
         <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.theme.css"> 
 
@@ -87,13 +87,13 @@
                     <ul>    
 
 
-                        <!-- SLIDE NR.1  -->                    
+                        <!-- SLIDE NR.1   took out the class tp-resizeme -->                    
                         <li data-transition="fade" data-slotamount="5" data-masterspeed="700">                        
                             <!-- MAIN IMAGE -->                        
                             <img src="assets/images/homepage.png"  alt="Slider Image 1"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">                        
 
                             <!-- LAYER NR. 1 -->
-                            <div class="tp-caption slider-text-big lfb ltt tp-resizeme"
+                            <div class="tp-caption slider-text-big lfb ltt "
                                 data-x="center" data-hoffset="0"
                                 data-y="center" data-voffset="0"
                                 data-speed="900"
@@ -105,21 +105,21 @@
                                 data-endelementdelay="0.1"
                                 data-endspeed="500"
                                 data-endeasing="Power4.easeIn"
-                                style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">Discover the power of
+                                style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;"><h1 style="font-size: 1.5em !important; margin-bottom: 0px;">Discover the power of</h1>
                                 <div class="slider-typed">
-                                    <span id="typed" style="color: #fff; font-weight: 700; font-size: 50px;"></span>                               
+                                    <span id="typed" style="color: #fff; font-weight: 900; font-size: 1.5em !important;margin-top: 0px;"></span>                               
                                 </div>
                             </div>  
 
 
-                            <div class="tp-caption slider-text lfb ltt tp-resizeme start" 
+                            <div class="tp-caption slider-text lfb ltt  start" 
                             data-x="center" data-hoffset="-85" data-y="center" data-voffset="150" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" 
-                             style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><a class="btn btn-white" href="#x" role="button">  Login  </a>
+                             style="z-index: 3;  white-space: nowrap;"><a class="btn btn-white hidden-xs" href="#x" role="button" style=" margin-top: 100px;">  Login  </a>
                             </div>
 
-                            <div class="tp-caption slider-text lfb ltt tp-resizeme start" 
+                            <div class="tp-caption slider-text lfb ltt start" 
                             data-x="center" data-hoffset="85" data-y="center" data-voffset="150" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="500" data-endeasing="Power4.easeIn" 
-                             style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><a class="btn btn-white" href="#x" role="button">Register</a>
+                             style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><a class="btn btn-white hidden-xs" href="#x" role="button" style=" margin-top: 100px;">Register</a>
                             </div>
                                   
                         </li>
@@ -358,8 +358,9 @@
         </div>
          <!-- ********************* END FOOTER SECTION  ********************* -->
 
-        <!-- Javascript Plugins -->     
-        <script src="assets/plugins/jquery-1.11.2.min.js"></script>      
+        <!-- Javascript Plugins --> 
+         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
+       
         <script src="assets/plugins/modernizr-2.8.3.js"></script>   
         <script src="assets/plugins/jquery.easing.min.js"></script>        
         <script src="assets/plugins/scrollReveal.min.js"></script>            
@@ -368,10 +369,14 @@
         <script src="assets/plugins/magnific/jquery.magnific-popup.min.js"></script>
         <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
         <script src="assets/plugins/retina.min.js"></script>
-        <script src="assets/plugins/jquery.mb.YTPlayer.js"></script>
-        <script src="assets/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>     
-        <script src="assets/plugins/jquery.simpleparallax.min.js"></script> 
-        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+        <script src="assets/plugins/jquery.mb.YTPlayer.js"></script>   
+        <script src="assets/plugins/jquery.simpleparallax.min.js"></script>  
+
+ <!--jQuery always needs to load first -->
+         
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>   
         <script src="assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
         <script src="assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
